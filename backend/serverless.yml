@@ -11,7 +11,7 @@ provider:
   name: aws
   runtime: nodejs12.x
   stage: ${opt:stage, 'dev'}
-  region: ${opt:region, 'us-east-1'}
+  region: ${opt:region, 'us-east-2'}
   
 #  X-Ray Tracing
   tracing: 
@@ -21,7 +21,7 @@ provider:
   environment:
     PROJECT_NAME: elijah-udacity-todo
     TODOS_TABLE: elijah-todo-${self:provider.stage}
-    S3_BUCKET_NAME: elijah-sdserx-todo-${self:provider.stage}
+    S3_BUCKET_NAME: elijah-hgyfyhkb-todo-${self:provider.stage}
 
 custom:
   documentation:
